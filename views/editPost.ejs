@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing Page</title>
+    <link rel="stylesheet" href="/styles/editing.css">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    
+        <div class="container" id="editingCont">
+            <h2>Edit the Post</h2>
+            <div class="postEditing">
+                <% if (data) { %>
+    
+                    <form action="/update/<%= data.index %>" method="POST">
+                        <div class="titleBox" id="one">
+                            <label for="title">Title:</label>
+                            <input type="text" name="title" id="title" placeholder="Some other title..."
+                                value="<%= data.title %>">
+                        </div>
+                        <div class="infoBox" id="two">
+                            <label for="info">Information:</label>
+                            <input type="text" name="info" id="info" placeholder="Some other info..."
+                                value="<%= data.info %>">
+                        </div>
+                        <input type="submit" value="Update" class="btn btn-success">
+                    </form>
+                    <% } else { %>
+                        <h2>Post not found or something went wrong!</h2>
+                        <% } %>
+    
+            </div>
+        </div>
+    
+        <%- include("partials/footer.ejs") %>
+</body>
+</html>

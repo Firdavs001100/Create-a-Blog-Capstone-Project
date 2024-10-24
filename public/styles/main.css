@@ -1,0 +1,214 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+header {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.postCreation, .postEditing {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.postCreation > form {
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid rgb(155, 172, 180);
+    width: 700px;
+}
+
+.postEditing > form {
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid rgb(155, 172, 180);
+    width: 700px;
+}
+
+.container h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    color: rgb(56, 97, 133);
+}
+
+.titleBox, .infoBox {
+    display: grid;
+    padding-bottom: 15px;
+}
+
+.infoBox {
+   grid-template-rows: auto 200px;
+}
+
+.btn {
+    background-color: rgb(60, 128, 142);
+    width: 100px;
+}
+
+.fs-2 {
+    color: rgb(33, 133, 221);
+    margin-left: 10px;
+}
+
+.nav-item {
+    margin-right: 10px;
+    margin-top: 5px; 
+}
+
+.nav {
+    margin-right: 10px;
+}
+
+footer span {
+    margin-left: 10px;
+}
+
+.noPostP {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+}
+
+.postViewing h4 {
+    font-size: 35px;
+}
+
+/* .postCreation + hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px dotted color-mix(in srgb, blue 40%, black 60%);
+    width: 20px; 
+    margin: 20px 0
+} */
+
+.postViewing > hr {
+    border: 2px solid color-mix(in srgb, blue 40%, black 60%);
+}
+
+.posts {
+    display: grid;
+    justify-content: space-around;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-columns: repeat(2, 400px);
+    /* gap: 50px; */
+    gap: 1.5rem;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* .eachPost {
+    padding: 15px;
+    border: 2px solid blue;
+}
+
+.eachPost h5 {
+    color: black;
+    text-decoration: underline;
+} */
+
+.eachPost {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px ridge #3b5998;
+    position: relative;
+    overflow: scroll; 
+    box-sizing: border-box;
+}
+
+/* Title styling */
+.eachPost h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+/* Info paragraph styling */
+.eachPost p {
+    color: #555;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    word-wrap: break-word;
+}
+
+.btnCont {
+    display: flex;
+   
+    justify-content: end;
+    margin-top: 150px;
+}
+/* Edit link styling */
+.btnCont a {
+    display: inline-block;
+    width: 65px;
+    padding: 8px 19px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    /* width: 80px; */
+}
+
+/* Delete button styling */
+.btnCont button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+
+}
+
+/* Hover effects */
+.eachPost:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btnCont a:hover {
+    background-color: #45a049;
+}
+
+.btnCont button:hover {
+    background-color: #e53935;
+}
+
+/* Styling for the message when no posts exist */
+.noPostP {
+    color: #777;
+    font-style: italic;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tHr {
+    border: 2px solid rgb(149 148 159);
+}
+
+

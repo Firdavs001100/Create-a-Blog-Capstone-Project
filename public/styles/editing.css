@@ -1,0 +1,54 @@
+/* Styling for the editing container */
+#editingCont {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the title box */
+#one {
+    margin-bottom: 15px;
+}
+
+#one label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#one input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Styling for the info box */
+#two {
+    margin-bottom: 15px;
+}
+
+#two label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#two input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Styling for the submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
